@@ -16,10 +16,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+// mongoose.connect("mongodb://localhost/budget", {
+//  useNewUrlParser: true,
+//  useFindAndModify: false
+// });
 
 mongoose.connect(MONGODB_URI);
 
